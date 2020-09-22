@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://codyhouse.co/gem/css-product-quick-view -->
+<html lang="en" class=" js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="https://codyhouse.co/">--><base href=".">
+<title>Product Quick View in CSS and jQuery | CodyHouse</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" itemprop="description" content="A " product="" quick="" view"="" modal="" window,="" animated="" using="" css3="" and="" velocity.js,="" that="" provides="" the="" user="" a="" access="" to="" main="" information."="">
+<meta name="keywords" itemprop="keywords" content="ecommerce, product, html, css, javascript, quick view">
+<link rel="canonical" href="https://codyhouse.co/gem/css-product-quick-view">
+
+<link rel="icon" type="image/svg+xml" href="https://codyhouse.co/assets/favicon/favicon.svg">
+<link rel="mask-icon" href="https://codyhouse.co/assets/favicon/safari-pinned-tab.svg" color="#888888">
+
+
+<meta property="og:url" content="https://codyhouse.co/gem/css-product-quick-view">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Product Quick View in CSS and jQuery | CodyHouse">
+<meta property="og:description" content="A " product="" quick="" view"="" modal="" window,="" animated="" using="" css3="" and="" velocity.js,="" that="" provides="" the="" user="" a="" access="" to="" main="" information."="">
+<meta property="og:image" content="https://codyhouse.co/assets/img/gems/hero-sharing/product-quick-view-featured.png">
+<meta property="og:site_name" content="CodyHouse">
+
+<script async="" src="./Product Quick View in CSS and jQuery _ CodyHouse_files/analytics.js.download"></script><script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+
+
+
+<link id="codyframe" rel="stylesheet" href="./Product Quick View in CSS and jQuery _ CodyHouse_files/style.css"> 
+<script>
+    if(!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) {var cfStyle = document.getElementById('codyframe');if(cfStyle) {var href = cfStyle.getAttribute('href');href = href.replace('style.css', 'style-fallback.css');cfStyle.setAttribute('href', href);}}
+  </script>
+
+<script id="_carbonads_projs" type="text/javascript" src="./Product Quick View in CSS and jQuery _ CodyHouse_files/CKYIK2QE.json"></script></head>
+<body class="user--not-logged-in" data-theme="default">
+<div class="position-relative">
+<div class="pre-header">
+
+<a href="https://codyhouse.co/sign-up">
+<div class="container max-width-lg flex justify-center">
+<div class="pre-header__msg text-sm flex flex-center">
+<p>🎉 <strong>Black Friday deal!</strong> 25% off your first year of CodyHouse Pro →</p>
+</div>
+</div>
+</a>
+</div> <header class="main-header js-main-header main-header--position-absolute" data-theme="">
+<div class="main-header__container container max-width-xl">
+<div class="flex items-center">
+<a href="https://codyhouse.co/" class="logo" aria-label="Go to homepage">
+<svg aria-hidden="true" viewBox="0 0 40 40"><title>CodyHouse Logo</title><path d="M40,22V18H33.652a17.844,17.844,0,0,0-.38-2.4A16.906,16.906,0,0,0,37,5H33a12.906,12.906,0,0,1-1.565,6.177,11.462,11.462,0,0,0-4.83-4.195,6.869,6.869,0,0,0-13.21,0,11.471,11.471,0,0,0-4.831,4.195A12.917,12.917,0,0,1,7,5H3A16.906,16.906,0,0,0,6.728,15.6a17.844,17.844,0,0,0-.38,2.4H0v4H6.408a18.253,18.253,0,0,0,.466,2.209A16.923,16.923,0,0,0,3,35H7a12.914,12.914,0,0,1,1.641-6.306C11.243,33.741,15.62,38,20,38s8.757-4.259,11.359-9.306A12.914,12.914,0,0,1,33,35h4a16.923,16.923,0,0,0-3.874-10.791A18.253,18.253,0,0,0,33.592,22ZM11,17a3,3,0,1,1,3,3A3,3,0,0,1,11,17Zm9,13a4,4,0,1,1,4-4A4,4,0,0,1,20,30Zm6-10a3,3,0,1,1,3-3A3,3,0,0,1,26,20Z"></path></svg>
+</a>
+</div>
+<div class="main-nav js-main-nav">
+<button class="main-nav__trigger js-trigger margin-left-sm"><i>Menu</i><em aria-hidden="true">Close</em></button>
+<nav class="main-nav__list js-nav">
+<ul>
+<li class="main-nav__label">#menu</li>
+<li><a href="https://codyhouse.co/ds/components">UI Framework</a></li>
+<li><a href="https://codyhouse.co/templates">Templates</a></li>
+<li><a href="https://codyhouse.co/library" class="">Experiments</a></li>
+<li class="main-nav__label">#account</li>
+<li aria-hidden="true" class="main-nav__separator"></li>
+<li data-display="notLoggedIn">
+<a href="https://codyhouse.co/log-in">
+<span class="inline-flex items-center">
+<span>Login</span>
+<svg aria-hidden="true" class="icon margin-left-xxs" viewBox="0 0 16 16"><g><circle cx="8" cy="5" r="3"></circle><path d="M8 9a5 5 0 0 0-5 5h10a5 5 0 0 0-5-5z"></path></g></svg>
+</span>
+</a>
+</li>
+<li data-display="loggedIn">
+<a class="main-nav__account-btn js-main-nav__account" href="https://codyhouse.co/account/account-settings">
+<span class="inline-flex items-center">
+<span>Account</span>
+<svg aria-hidden="true" class="icon margin-left-xxs" viewBox="0 0 16 16"><polygon points="3,5 8,11 13,5 "></polygon></svg>
+</span>
+</a>
+<ul class="main-nav__menu js-main-nav__menu">
+<li><a href="https://codyhouse.co/account/account-settings">Account settings</a></li>
+<li><a href="https://codyhouse.co/ds/all-projects">Projects</a></li>
+<li><a href="https://codyhouse.co/log-out">Logout</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+</div><main class="js-highlight">
+<div class="gem-intro" style="background-color: #dee0ea">
+<figure class="gem-intro__img">
+<div class="gem-intro__img-wrapper">
+<img src="./Product Quick View in CSS and jQuery _ CodyHouse_files/product-quick-view-featured.svg" alt="Product Quick View">
+</div>
+</figure>
+</div> <div class="margin-top-md margin-bottom-xl">
+<article class="article article--gem">
+<div class="text-component container max-width-sm">
+<h1>Product Quick View</h1>
+<p class="article-description">A "product quick view" modal window, animated using CSS3 and Velocity.js, that provides the user a quick access to the main product information.</p>
+</div>
+<div class="gem-divider">
+<div class="gem-divider__cta margin-bottom-lg container max-width-sm">
+<span aria-hidden="true" class="gem-divider__hr"></span>
+<a class="btn btn--lg btn--accent" href="https://codyhouse.co/demo/product-quick-view/index.html">View demo</a>
+<a class="btn btn--lg btn--contrast js-download-experiment" href="https://codyhouse.co/redirect-experiment" data-experiment="product-quick-view">
+<span>Download</span>
+</a>
+<span aria-hidden="true" class="gem-divider__hr"></span>
+</div>
+
+
+
+<div class="container max-width-adaptive-sm margin-bottom-lg">
+<a href="https://codyhouse.co/ds/components" class="tutorial-avd text-md padding-sm">
+⚡️ <span class="text-underline">Design 10x faster with our library of 303 components →</span>
+</a>
+</div>
+</div> 
+<div class="text-component container max-width-sm">
+<p>There are some patterns in the e-commerce design world aimed at increasing the conversion rate by simplifying the user experience.&nbsp;Other patterns try to achieve the same goal by providing additional information where needed. The <strong>product quick view modal</strong>&nbsp;belongs to the second category.</p><p>The standard process is straightforward: click on the <em>quick view</em> button to fire a modal with additional information and a call-to-action button. By building our resource, we didn't reinvent&nbsp;the&nbsp;wheel: at the end you still get the same result. We tried to enhance&nbsp;the transition from point A to point B&nbsp;though.</p><p>These days native applications are using the full power of the device and <strong>motion design notions</strong>&nbsp;to provide&nbsp;the best UX possible. The web needs to run at the same speed. There are great tools like <a href="http://bouncejs.com/">Bounce.js</a> by Joel Besada&nbsp;and <a href="http://julian.com/research/velocity/">Velocity.js</a> by Julian Shapiro that can help you build smooth animations.</p><p>Getting back to our nugget, here is a quick animation to show you what we had in mind&nbsp;(.gif&nbsp;created in After Effects):</p>
+<p><img class="alignnone size-full wp-image-337" src="./Product Quick View in CSS and jQuery _ CodyHouse_files/css-product-quick-view.gif" alt="product quick view animation"></p>
+<h2>Creating the structure</h2>
+<p>The gallery is an unordered list. The cool stuff happens into the&nbsp;<code>.cd-quick-view &lt;div&gt;</code>, which contains a slider (<code>.cd-slider-wrapper</code>) and the product information (<code>.cd-item-info</code>).</p>
+<pre><code class="html hljs js-hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cd-items cd-container"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cd-item"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/item-1.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Item Preview"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cd-trigger"</span>&gt;</span>Quick View<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span> <span class="hljs-comment">&lt;!-- cd-item --&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-comment">&lt;!-- ... --&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span> <span class="hljs-comment">&lt;!-- cd-items --&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cd-quick-view"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cd-slider-wrapper"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cd-slider"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"selected"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/item-1.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Product 1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/item-2.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Product 2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/item-3.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Product 3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span> <span class="hljs-comment">&lt;!-- cd-slider --&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cd-slider-navigation"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cd-next"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Prev<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cd-prev"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span> <span class="hljs-comment">&lt;!-- cd-slider-navigation --&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> <span class="hljs-comment">&lt;!-- cd-slider-wrapper --&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cd-item-info"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Produt Title<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cd-item-action"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"add-to-cart"</span>&gt;</span>Add to cart<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>          
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span>&gt;</span>Learn more<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span> 
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span> <span class="hljs-comment">&lt;!-- cd-item-action --&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> <span class="hljs-comment">&lt;!-- cd-item-info --&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#0"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cd-close"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> <span class="hljs-comment">&lt;!-- cd-quick-view --&gt;</span></code></pre>
+<h2>Adding style</h2>
+<p>First of all, <span style="text-decoration: underline;">the quick view effect is hidden on small devices</span>. The reason being that on a phone it's easier to access directly the product page.</p><p>That said, most of the animations have been created in jQuery&nbsp;using <a href="http://julian.com/research/velocity/">Velocity.js</a>&nbsp;to avoid jank effects. The dark overlay layer was created by animating the <code>body::after</code> pseudo-element:</p>
+<pre><code class="scss hljs js-hljs"><span class="hljs-selector-tag">body</span>::after {
+  <span class="hljs-comment">/* dark overlay layer - visible when we fire .cd-quick-view */</span>
+  <span class="hljs-attribute">position</span>: fixed;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">background</span>: rgba(<span class="hljs-number">71</span>, <span class="hljs-number">55</span>, <span class="hljs-number">78</span>, <span class="hljs-number">0.8</span>);
+  <span class="hljs-attribute">visibility</span>: hidden;
+  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">transition</span>: opacity .<span class="hljs-number">3s</span> <span class="hljs-number">0s</span>, visibility <span class="hljs-number">0s</span> .<span class="hljs-number">3s</span>;
+}
+@<span class="hljs-keyword">media</span> only screen and (min-width: 1024px) {
+  <span class="hljs-selector-tag">body</span><span class="hljs-selector-class">.overlay-layer</span>::after {
+    <span class="hljs-attribute">visibility</span>: visible;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">transition</span>: opacity .<span class="hljs-number">3s</span> <span class="hljs-number">0s</span>, visibility <span class="hljs-number">0s</span> <span class="hljs-number">0s</span>;
+  }
+}</code></pre>
+<p>A lot of elements are animated or have a <strong>CSS3 transition</strong>. To keep a good performance we used the <code>translateZ(0)</code> hack on some of them (while we wait for the new <a href="https://dev.opera.com/articles/css-will-change-property/">will-change property</a> to get more browser support).</p>
+<pre><code class="scss hljs js-hljs"><span class="hljs-selector-class">.cd-quick-view</span> {
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">position</span>: fixed;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">900px</span>;
+  <span class="hljs-attribute">visibility</span>: hidden;
+
+  <span class="hljs-comment">/* Force Hardware Acceleration in WebKit */</span>
+  <span class="hljs-attribute">transform</span>: translateZ(<span class="hljs-number">0</span>);
+  -webkit-<span class="hljs-attribute">backface-visibility</span>: hidden;
+  <span class="hljs-attribute">backface-visibility</span>: hidden;
+
+  will-change: left, top, width;
+  <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+}</code></pre>
+<p>No more CSS tricks worth mentioning. Let's dive into jQuery!</p>
+<h2>Events handling</h2>
+<p>When user clicks the <code>.cd-trigger</code> element, we evaluate the top, left and width values of the gallery selected image and assign them to the <code>.cd-quick-view</code> element (which is in <code>position: fixed</code>). This way the <code>.cd-quick-view</code> &nbsp;has the same dimensions of the gallery image and completely covers it&nbsp;(meanwhile the gallery image is hidden using the <code>.empty-box</code> class).</p><p>We then animate the <code>.cd-quick-view</code> element. First step we animate the <code>.cd-quick-view</code> width to the sliderFinalWidth (this is a variable set to 400 in the .js file). This value represents the width of the slider image inside the quick view panel; we also animate the <code>.cd-quick-view</code> position (top and left values) so that it's centered in the viewport (the height of the quick view panel is automatically given by the image slider height). Note that during this step, only the image slider is visible, while the rest of the quick view content is hidden.</p><p>Second step we change the <code>.cd-quick-view&nbsp;</code>width to its final value ( 80% of the viewport width, with a max value of 900 - defined by the maxQuickWidth variable) and change its position accordingly so that the panel is always centered. After this second step, we assign the <code>.add-content</code> class to the <code>.cd-quick-view</code> to show its hidden content.</p><p>For the animation, we used <a href="http://julian.com/research/velocity/">Velocity.js</a>, a plugin that re-implements jQuery's <code>$.animate()</code> for significantly greater performance (if you've never used it, you should definitively give it a try!). We used the 'spring' easing for the first animation step, and the \ease' for the second one.</p>
+<pre><code class="javascript hljs js-hljs">$(<span class="hljs-string">'.cd-trigger'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>)</span>{
+   $(<span class="hljs-string">'.cd-quick-view'</span>).css({
+      <span class="hljs-string">"top"</span>: topSelected, <span class="hljs-comment">// this is the selected image top value</span>
+      <span class="hljs-string">"left"</span>: leftSelected, <span class="hljs-comment">// this is the selected image left value</span>
+      <span class="hljs-string">"width"</span>: widthSelected, <span class="hljs-comment">// this is the selected image width</span>
+   }).velocity({
+      <span class="hljs-comment">//animate the quick view: animate its width and center it in the viewport</span>
+      <span class="hljs-comment">//during this animation, only the slider image is visible</span>
+      <span class="hljs-string">'width'</span>: sliderFinalWidth+<span class="hljs-string">'px'</span>,
+      <span class="hljs-string">'left'</span>: finalLeft+<span class="hljs-string">'px'</span>, <span class="hljs-comment">// ($(window).width - sliderFinalWidth)/2,</span>
+      <span class="hljs-string">'top'</span>: finalTop+ <span class="hljs-string">'px'</span>, <span class="hljs-comment">// ($(window).height - slider final height)/2,</span>
+   }, <span class="hljs-number">1000</span>, [ <span class="hljs-number">400</span>, <span class="hljs-number">20</span> ])
+   .velocity({
+      <span class="hljs-string">'width'</span>: quickViewWidth+<span class="hljs-string">'px'</span>, <span class="hljs-comment">// 80% of the viewport</span>
+      <span class="hljs-string">'left'</span>: quickViewLeft+<span class="hljs-string">'px'</span>, <span class="hljs-comment">// 10% of the viewport</span>
+   }, <span class="hljs-number">300</span>, <span class="hljs-string">'ease'</span> ,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+      <span class="hljs-comment">//show quick view content</span>
+      $(<span class="hljs-string">'.cd-quick-view'</span>).addClass(<span class="hljs-string">'add-content'</span>);
+   }).addClass(<span class="hljs-string">'is-visible'</span>);
+   <span class="hljs-comment">//assign .overlay-layer class to the body, assign the .empty-box class to the selected .cd-item</span>
+   <span class="hljs-comment">//...</span>
+});</code></pre>
+<p>When user closes the quick view panel, the reverse animation is performed (in this case, 'ease' is used for both animations). <span style="text-decoration: underline;"><br>One additional note</span>: before closing the quick view panel, we update the galley image <code>src</code> value, this way it's equal to the slider visible image.</p> </div>
+</article>
+</div>
+<div class="cta-blocks-socials margin-bottom-xl">
+<div class="cta-blocks-socials__container container max-width-sm">
+<div class="cta-blocks-socials__twitter js-animate-hover" data-duration="600">
+<a href="https://twitter.com/CodyWebHouse" aria-label="Follow us on Twitter">
+<em aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<g id="i-twitter-body"><path d="M42.3,10.7a9.65,9.65,0,0,0,4.3-5.4,21.673,21.673,0,0,1-6.3,2.4,9.968,9.968,0,0,0-7.2-3.1,9.816,9.816,0,0,0-9.8,9.8,7.8,7.8,0,0,0,.3,2.2c-1.819,7.994-4.475,13.556-9.1,18.3A20.007,20.007,0,0,1,2.3,39.1,16.95,16.95,0,0,1,0,39a27.827,27.827,0,0,0,15.1,4.4c18.1,0,28-15,28-28V14.1a17.958,17.958,0,0,0,4.9-5A21.919,21.919,0,0,1,42.3,10.7Z" fill="#fff"></path></g>
+<g id="i-twitter-wing"><path d="M23.6,16.6A28.018,28.018,0,0,1,3.3,6.3,10.234,10.234,0,0,0,2,11.2a9.793,9.793,0,0,0,4.4,8.2,11.571,11.571,0,0,1-4.5-1.2v.1A9.88,9.88,0,0,0,9.8,28a10.9,10.9,0,0,1-2.6.3,12.252,12.252,0,0,1-1.9-.2,9.79,9.79,0,0,0,9.2,6.8A28.008,28.008,0,0,0,23.6,16.6Z" fill="#fff"></path></g>
+</svg>
+<p>Follow us</p>
+</em>
+</a>
+</div>
+<div class="cta-blocks-socials__facebook js-animate-hover" data-duration="400">
+<a href="https://www.facebook.com/CodyWebHouse" aria-label="Join us on Facebook">
+<em aria-hidden="true">
+<svg class="cta-animation-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" width="48" height="48">
+<g>
+<path d="M46,0H2A2,2,0,0,0,0,2V46a2,2,0,0,0,2,2H46a2,2,0,0,0,2-2V2A2,2,0,0,0,46,0Z" fill="#fff"></path>
+<path class="cta-animation-facebook__f cta-animation-facebook__f--1" d="M25.638,48V29.412H19.383V22.168h6.255V16.825c0-6.2,3.787-9.575,9.318-9.575a51.383,51.383,0,0,1,5.589.285v6.479l-3.836,0c-3.007,0-3.59,1.429-3.59,3.527v4.625h7.174l-.934,7.244h-6.24V48Z" fill="#415893"></path>
+<path class="cta-animation-facebook__f cta-animation-facebook__f--2" d="M25.638,48V29.412H19.383V22.168h6.255V16.825c0-6.2,3.787-9.575,9.318-9.575a51.383,51.383,0,0,1,5.589.285v6.479l-3.836,0c-3.007,0-3.59,1.429-3.59,3.527v4.625h7.174l-.934,7.244h-6.24V48Z" fill="#415893"></path>
+</g>
+</svg>
+<p>Join us</p>
+</em>
+</a>
+</div>
+<div class="cta-blocks-socials__main js-animate-hover" data-duration="400">
+<a href="https://codyhouse.co/ds/components" aria-label="Browse our web components">
+<div>
+<h3>📦 UI Framework</h3>
+<p>Browse our library of customizable <span>web components</span></p>
+<i aria-hidden="true">
+<b class="cta-animation-components">
+<b class="cta-animation-components__rect cta-animation-components__rect--1"></b>
+<b class="cta-animation-components__rect cta-animation-components__rect--2"></b>
+<b class="cta-animation-components__rect cta-animation-components__rect--3"></b>
+</b>
+</i>
+</div>
+</a>
+</div>
+</div>
+</div> <div class="newsletter text-center js-newsletter margin-bottom-xl">
+<div class="container">
+<div class="text-component margin-bottom-md">
+
+
+<h1>Level up your CSS skills</h1>
+
+<p>💌 Each month we email a 1-minute CSS tutorial to 20K developers</p>
+</div>
+<form class="newsletter__form max-width-xxs margin-x-auto js-newsletter-form">
+<input type="email" placeholder="Email" name="email" class="form-control width-100% js-email">
+<button class="btn btn--subtle btn--preserve-width newsletter__btn js-btn">
+<span class="btn__content-a">Try it</span>
+<span class="btn__content-b" aria-hidden="true">
+<svg class="icon icon--md icon--is-spinning" viewBox="0 0 32 32"><path d="M16,32A16,16,0,1,1,32,16,16.019,16.019,0,0,1,16,32ZM16,4A12,12,0,1,0,28,16,12.013,12.013,0,0,0,16,4Z" fill="currentColor" opacity="0.4"></path><path d="M32,16H28A12.013,12.013,0,0,0,16,4V0A16.019,16.019,0,0,1,32,16Z" fill="currentColor"></path></svg>
+</span>
+<span class="btn__content-c">
+<svg class="icon icon--md" viewBox="0 0 32 32"><polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" points="2,15 12,25 30,7 " stroke-linejoin="round"></polyline></svg>
+</span>
+</button>
+</form>
+<p class="newsletter__response newsletter__response--is-hidden js-response-message"></p>
+</div>
+</div></main>
+<div class="notification js-privacy-policy-alert js-notification" role="alert">
+<div class="notification__content">
+<div class="text-component">
+<p>📢 We use cookies to give you the best possible website experience. By using CodyHouse, you agree to our <a href="https://codyhouse.co/privacy-policy">Privacy Policy</a>.</p>
+</div>
+<button class="notification__btn js-notification__close">
+<svg class="icon" viewBox="0 0 16 16"><g><title>Close Notification</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 2l12 12"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 2L2 14"></path></g></svg>
+</button>
+</div>
+</div>
+<div class="flash-message js-flash-message js-flash-message--duplicate-prj" role="status" data-message-trigger="" data-duration="3000">
+<p>✅ Project duplicated</p>
+</div><div class="flash-message js-flash-message js-flash-message--create-prj" role="status" data-message-trigger="" data-duration="3000">
+<p>✅ Project created</p>
+</div>
+<footer class="main-footer ">
+<div class="container max-width-xl">
+<div class="main-footer__content">
+<div class="footer-nav">
+<nav>
+ <h4 class="footer-nav__title">UI Framework</h4>
+<ul>
+<li><a href="https://codyhouse.co/ds/get-started">Documentation</a></li>
+<li><a href="https://codyhouse.co/ds/docs/framework">Framework</a></li>
+<li><a href="https://codyhouse.co/ds/components">Components</a></li>
+<li><a href="https://codyhouse.co/ds/globals">Globals</a></li>
+<li><a href="https://codyhouse.co/codyhouse-pro">CodyHouse Pro</a></li>
+<li><a href="https://codyhouse.nolt.io/">Suggest Component ↗</a></li>
+</ul>
+</nav>
+<nav>
+<h4 class="footer-nav__title">Learn</h4>
+<ul>
+<li><a href="https://codyhouse.co/library">Experiments</a></li>
+<li><a href="https://codyhouse.co/tutorials">Tutorials</a></li>
+<li><a href="https://codyhouse.co/nuggets">CSS Nuggets</a></li>
+</ul>
+</nav>
+<nav>
+<h4 class="footer-nav__title">Support</h4>
+<ul>
+<li><a href="https://codyhouse.co/faq">Questions &amp; Answers</a></li>
+<li><a href="https://codyhouse.co/contact">Contact</a></li>
+<li><a href="https://codyhouse.co/license">License</a></li>
+<li><a href="https://codyhouse.co/terms">Terms</a></li>
+<li><a href="https://codyhouse.co/privacy-policy">Privacy policy</a></li>
+</ul>
+</nav>
+<nav>
+<h4 class="footer-nav__title">Socials</h4>
+<ul>
+<li>
+<a href="https://codyhouse.co/blog" class="icon-text footer-nav__item-social">
+<svg class="icon" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><g><path d="M14,0H2C1.4,0,1,0.4,1,1v14c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V1C15,0.4,14.6,0,14,0z M13,14H3V2h10V14z"></path> <rect data-color="color-2" x="4" y="3" width="4" height="4"></rect> <rect data-color="color-2" x="9" y="4" width="3" height="1"></rect> <rect data-color="color-2" x="9" y="6" width="3" height="1"></rect> <rect data-color="color-2" x="4" y="8" width="8" height="1"></rect> <rect data-color="color-2" x="4" y="10" width="8" height="1"></rect> <rect data-color="color-2" x="4" y="12" width="5" height="1"></rect></g></svg>
+<span>Blog</span>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/CodyWebHouse" class="icon-text footer-nav__item-social twitter">
+<svg class="icon" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><title>logo twitter</title><g><path d="M16,3c-0.6,0.3-1.2,0.4-1.9,0.5c0.7-0.4,1.2-1,1.4-1.8c-0.6,0.4-1.3,0.6-2.1,0.8c-0.6-0.6-1.5-1-2.4-1 C9.3,1.5,7.8,3,7.8,4.8c0,0.3,0,0.5,0.1,0.7C5.2,5.4,2.7,4.1,1.1,2.1c-0.3,0.5-0.4,1-0.4,1.7c0,1.1,0.6,2.1,1.5,2.7 c-0.5,0-1-0.2-1.5-0.4c0,0,0,0,0,0c0,1.6,1.1,2.9,2.6,3.2C3,9.4,2.7,9.4,2.4,9.4c-0.2,0-0.4,0-0.6-0.1c0.4,1.3,1.6,2.3,3.1,2.3 c-1.1,0.9-2.5,1.4-4.1,1.4c-0.3,0-0.5,0-0.8,0c1.5,0.9,3.2,1.5,5,1.5c6,0,9.3-5,9.3-9.3c0-0.1,0-0.3,0-0.4C15,4.3,15.6,3.7,16,3z"></path></g></svg>
+<span>Twitter</span>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/codyhouse.css/" class="icon-text footer-nav__item-social instagram">
+<svg class="icon" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><g><circle cx="12.145" cy="3.892" r="0.96"></circle><path data-color="color-2" d="M8,12c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S10.206,12,8,12z M8,6C6.897,6,6,6.897,6,8 s0.897,2,2,2s2-0.897,2-2S9.103,6,8,6z"></path><path d="M12,16H4c-2.056,0-4-1.944-4-4V4c0-2.056,1.944-4,4-4h8c2.056,0,4,1.944,4,4v8C16,14.056,14.056,16,12,16z M4,2C3.065,2,2,3.065,2,4v8c0,0.953,1.047,2,2,2h8c0.935,0,2-1.065,2-2V4c0-0.935-1.065-2-2-2H4z"></path></g></svg>
+<span>Instagram</span>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/CodyWebHouse" class="icon-text footer-nav__item-social facebook">
+<svg class="icon" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><title>logo facebook</title><g><path d="M15.3,0H0.7C0.3,0,0,0.3,0,0.7v14.7C0,15.7,0.3,16,0.7,16H8v-5H6V8h2V6c0-2.1,1.2-3,3-3 c0.9,0,1.8,0,2,0v3h-1c-0.6,0-1,0.4-1,1v1h2.6L13,11h-2v5h4.3c0.4,0,0.7-0.3,0.7-0.7V0.7C16,0.3,15.7,0,15.3,0z"></path></g></svg>
+ <span>Facebook</span>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UCQhxjJcgCwDW_2JqlDBsWtA" class="icon-text footer-nav__item-social youtube">
+<svg class="icon" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><title>logo youtube</title><g><path d="M15.8,4.8c-0.2-1.3-0.8-2.2-2.2-2.4C11.4,2,8,2,8,2S4.6,2,2.4,2.4C1,2.6,0.3,3.5,0.2,4.8C0,6.1,0,8,0,8 s0,1.9,0.2,3.2c0.2,1.3,0.8,2.2,2.2,2.4C4.6,14,8,14,8,14s3.4,0,5.6-0.4c1.4-0.3,2-1.1,2.2-2.4C16,9.9,16,8,16,8S16,6.1,15.8,4.8z M6,11V5l5,3L6,11z"></path></g></svg>
+<span>Youtube</span>
+</a>
+</li>
+
+<li>
+<a href="https://codyhouse.co/newsletter" class="icon-text footer-nav__item-social">
+<svg class="icon" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><title>email</title><g><path data-color="color-2" d="M14,6.883V13H2V6.82L0,5.695V14c0,0.553,0.448,1,1,1h14c0.552,0,1-0.447,1-1V5.783L14,6.883z"></path> <path d="M15,1H1C0.4,1,0,1.4,0,2v1.4l8,4.5l8-4.4V2C16,1.4,15.6,1,15,1z"></path> </g></svg>
+<span>Newsletter</span>
+</a>
+</li>
+<li>
+<a href="http://feeds.feedburner.com/codyhouse/feeds" class="icon-text footer-nav__item-social">
+<svg class="icon" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><title>logo-rss</title><g><circle cx="3" cy="13" r="2"></circle> <path d="M15,15h-2.7C12.3,8.8,7.2,3.7,1,3.7V1C8.7,1,15,7.3,15,15z"></path> <path d="M10.3,15H7.7c0-3.7-3-6.7-6.7-6.7V5.7C6.1,5.7,10.3,9.9,10.3,15z"></path></g></svg>
+<span>RSS</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="footer-avd">
+<div class="footer-avd__label">Sponsored by</div>
+<div class="footer-avd__wrapper">
+<script async="" type="text/javascript" src="./Product Quick View in CSS and jQuery _ CodyHouse_files/carbon.js.download" id="_carbonads_js"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42JECTSIV2QWCWA4YKQNCTYI4KJMC6ADKZ3JCYYD4KQLF6SDKKJKCK7I623MF67I623WCEAD427YC6ADL23KC6SDTK3UCV7DTK3EHJNCLSIZ?segment=placement:codyhouseco;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Product Quick View in CSS and jQuery _ CodyHouse_files/1550855362-cc_dark.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42JECTSIV2QWCWA4YKQNCTYI4KJMC6ADKZ3JCYYD4KQLF6SDKKJKCK7I623MF67I623WCEAD427YC6ADL23KC6SDTK3UCV7DTK3EHJNCLSIZ?segment=placement:codyhouseco;" class="carbon-text" target="_blank" rel="noopener sponsored">Adobe Creative Cloud for Teams starting at $33.99 per month.</a></span><a href="http://carbonads.net/?utm_source=codyhouseco&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+</div>
+</div> </div>
+<div class="padding-y-lg">
+<div class="text-sm flex flex-column flex-gap-md flex-row@md justify-between@md items-center@md">
+<p>©2014 - 2020 CodyHouse. A project by <a href="https://twitter.com/romano_cla" class="color-inherit">@romano_cla</a> and <a href="https://twitter.com/guerriero_se" class="color-inherit">@guerriero_se</a></p>
+<p class="flex">
+<button href="#0" class="reset main-footer__btn margin-right-xxs js-back-to-top back-to-top--is-visible">
+<svg aria-hidden="true" class="icon icon--xxs margin-right-xxs" viewBox="0 0 12 12"><g><path d="M6,0a6,6,0,1,0,6,6A6,6,0,0,0,6,0ZM3,7,6,3,9,7Z"></path></g></svg>
+<span>Back to top</span>
+</button>
+<button href="#0" class="reset main-footer__btn btn-states js-app-dark-mode">
+<svg aria-hidden="true" class="icon icon--xxs margin-right-xxs" viewBox="0 0 16 16"><g><path d="M6,0C2.5,0.9,0,4.1,0,7.9C0,12.4,3.6,16,8.1,16c3.8,0,6.9-2.5,7.9-6C9.9,11.7,4.3,6.1,6,0z"></path></g></svg>
+<span class="btn-states">
+<b class="btn__content-a">Enable</b><b class="btn__content-b">Disable</b> Dark Mode
+</span>
+</button>
+</p>
+</div>
+</div>
+</div>
+</footer>
+<div class="modal js-modal " data-modal-trigger="modalProRequired">
+<div class="modal__content max-width-xs js-modal-content" role="alertdialog" tabindex="-1" aria-labelledby="modalTitlePro1" aria-describedby="modalDescriptionPro1">
+<header class="modal__header">
+<h3 class="modal__title text-truncate" id="modalTitlePro1">🚀 Upgrade to CodyHouse Pro</h3>
+<button class="modal__header-close-btn js-modal__close">
+<svg class="icon" viewBox="0 0 16 16"><title>Close modal window</title><g stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="13.5" y1="2.5" x2="2.5" y2="13.5"></line><line x1="2.5" y1="2.5" x2="13.5" y2="13.5"></line></g></svg>
+</button>
+</header>
+<div class="modal__body">
+<div class="text-component">
+<ul>
+<li>✅ Unlimited CodyHouse projects</li>
+<li>✅ Unlock 127 pro components and counting</li>
+<li>✅ One-click project export</li>
+</ul>
+</div>
+<footer class="margin-top-md">
+<div class="flex flex-column flex-gap-sm flex-row@sm items-center@sm justify-end@sm">
+<a href="https://codyhouse.co/log-in" class="color-inherit margin-right-auto" data-display="notLoggedIn">Log in</a>
+<a href="https://codyhouse.co/codyhouse-pro" class="btn btn--subtle">Learn more</a>
+<a href="https://codyhouse.co/sign-up?become-pro" class="btn btn--primary">Go Pro - $89/year</a>
+</div>
+</footer>
+</div>
+</div>
+<button class="modal__close-btn js-modal__close">
+<svg class="icon" viewBox="0 0 16 16"><title>Close modal window</title><g stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="13.5" y1="2.5" x2="2.5" y2="13.5" data-cap="butt"></line><line x1="2.5" y1="2.5" x2="13.5" y2="13.5" data-cap="butt"></line></g></svg>
+</button>
+</div><div class="flash-message js-flash-message flash-message--error js-flash-message--project-export" role="status" data-message-trigger="" data-duration="3000">
+<p>There was an error while trying to export your project. Please try again or <a href="https://codyhouse.co/contact">contact us</a></p>
+</div>
+<script>
+  var COMP_NUM = 303;
+</script>
+<script>
+  var ROUTE    = 'gem_css-product-quick-view';
+  var AJAX_URL = 'post/';
+  const IS_LOGGED = '0';
+  const IS_FREE = '1';
+  var PROJECT = null;
+  const STRIPE_PB = 'pk_live_1JJgxoXnJdjpNbgxEEXlCqKb00HEdWbq1K';
+  var COMPNUM = '303';
+</script>
+<script src="./Product Quick View in CSS and jQuery _ CodyHouse_files/saved_resource"></script>
+<script src="./Product Quick View in CSS and jQuery _ CodyHouse_files/main.min.js.download"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48014931-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+<script src="./Product Quick View in CSS and jQuery _ CodyHouse_files/app-main.min.js.download"></script> 
+
+
+<iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeMetricsController0" allowpaymentrequest="true" src="./Product Quick View in CSS and jQuery _ CodyHouse_files/m-outer-6e6ed81584679d263bf5a2b0f15af9e1.html" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe></body></html>

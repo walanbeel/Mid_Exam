@@ -62,21 +62,43 @@ $(document).ready(function() {
       
 
 
-    function populate(s1,s2){
-        var s1 = document.getElementById(s1);
-        var s2 = document.getElementById(s2);
-        s2.innerHTML = "";
-        if(s1.value == "Yemen"){
-            var optionArray = ["|","sana'a|Sana'a","taiz|Taiz","abb|Abb"];
-        } else if(s1.value == " Egypt"){
-            var optionArray = ["|","cairo|Cairo","alexandria|Alexandria","giza|Giza"];
-        } 
-        for(var option in optionArray){
-            var pair = optionArray[option].split("|");
-            var newOption = document.createElement("option");
-            newOption.value = pair[0];
-            newOption.innerHTML = pair[1];
-            s2.options.add(newOption);
+        function populate(s1,s2){
+            var s1 = document.getElementById(s1);
+            var s2 = document.getElementById(s2);
+            s2.innerHTML = "";
+            if(s1.value == "Yemen"){
+                var optionArray = "<option value='Sana'>Sana'a</option><option value='Taiz'>Taiz</option><option value='Abb'>Abb</option>";
+                s2.innerHTML=optionArray;
+                
+            } else if(s1.value == " Egypt"){
+                var optionArray2 ="<option value='Cairo'>Cairo</option><option value='Alexandria'>Alexandria</option><option value='giza'>giza</option>" ;
+                s2.innerHTML=optionArray2;
+            } 
+           
         }
-    }
+      /*  var drop = document.getElementById("slct2");
+            var divimg = document.getElementById("div-img");
+        
+              
+        function swapImage(){	
+            if(drop.value=="Sana"){
+                divimg.innerHTML = sanaaImg;
+            }
+            else if(drop.value=="Taiz"){
+                divimg.innerHTML = taizImg;
+            }
+            else if(drop.value=="Abb"){
+                divimg.innerHTML = ibbImg;
+            }
+            else if(drop.value=="Cairo"){
+                divimg.innerHTML = cairoImg;
+            }
+            else if(drop.value=="Alexandria"){
+                divimg.innerHTML = alexImg;
+                }
+            else if(drop.value=="giza"){
+                divimg.innerHTML = giazImg;
+            }
+    
+        }*/
 

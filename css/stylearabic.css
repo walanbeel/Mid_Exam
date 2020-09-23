@@ -38,7 +38,7 @@
 body{
     padding:0px;
     margin:0px;
-    
+    direction: rtl;
 }
 *{
     box-sizing: border-box;
@@ -90,7 +90,7 @@ header .site-title{
 }
 
 .navbar-nav.basket-icon{
-   margin-right:6.5rem !important;
+   margin-left:6.5rem !important;
 }
 
 /**slider one**/
@@ -208,14 +208,14 @@ header .site-title{
     font-size: 13px;
 }
 .carousel-inner .carousel-caption{
-    float:right;
+    float:left;
 	width: 50%
 }
 
 /*End Silder*/ 
 /*card*/
 /* Category Ads */
-
+/*
 #ads {
     margin: 30px 0 30px 0;
    
@@ -308,7 +308,7 @@ header .site-title{
 #ads .ad-title h5 {
     text-transform: uppercase;
     font-size: 18px;
-}
+}*/
 
 /*card images*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
@@ -338,7 +338,7 @@ a
 
 .badge {
      position: absolute;
-    left: -10px;
+    right: -10px;
     top: -18px;
     background: #ff4444;
     border-radius: 50%;
@@ -391,7 +391,7 @@ a
 
 .product-details h4 a {
     font-weight: 500;
-    text-align: center;
+    text-align: right;
     display: block;
     margin-bottom: 18px;
     margin-top: 20px;
@@ -495,7 +495,7 @@ a
 }
 
 .product-links {
-    text-align: right;
+    text-align: left;
 }
 
 .product-links a {
@@ -602,7 +602,7 @@ a
 }
 
 .footer .footer-content .contact-form .contact-btn{
-   float: right;
+   float: left;
    font-size:1.1rem;
    font-family:var( --roboto) ;
 }
@@ -672,19 +672,43 @@ a
       
       
 
-    /*/Ad sell*/
-    .banner-container {
-       
-    margin-top: 10%;
+      /*/Ad sell*/
+      .flex-container{
+        margin-left: 20px;
+
+    }
+    
   
     
-      }
       
-       .view img{
-        margin-top: 15px;
-        margin-left:150px;
-        width:400%;
-        height:800%;
+      
+       .card-group img{
+        margin-top: 30px;
+        margin-left:25px;
+       
+      
         
       }
-      
+
+/*Ad sell*/
+.slider{
+    width: 80%;
+    height:100%;
+    margin: 100px auto;
+    
+  }
+  .slick-slide{
+  
+    margin: 0px 28px;
+  }
+  .slick-slide img{
+   
+   widows: 100px;
+   height: 100px;
+  }
+  .slick-prev:before,
+  .slick-next:before{
+   
+    color:#1abc9c;
+  }
+  

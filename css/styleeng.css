@@ -13,74 +13,10 @@
     --gugi:"Gugi",cursive;
     --sofia:"Sofia",cursive;
 }
-@import url('https://codepen.io/profound7/pen/NvdGyj.css?3&common');
+a{
+    color: rgb(211, 210, 210);
+    text-decoration: none;
 
-body[translate] .grid,
-.grid {
-    position: relative;
-    display: grid;
-    height: 100%;
-    grid-gap: 20px;
-    
-    grid-template:
-        "header header header" 3em
-        "nav    main   aside"  auto
-        "footer footer footer" 3em
-    /    1fr    2fr    1fr;
-    
-    justify-content: center;
-}
-
-.header { grid-area: header; }
-.nav { grid-area: nav; }
-.main { grid-area: main; }
-.aside { grid-area: aside; }
-.footer { grid-area: footer; }
-
-.fixed-top {
-    display: block;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-height: 3em;
-}
-
-.fixed-bottom {
-    display: block;
-    position: sticky;
-    bottom: 0;
-}
-
-/*----------------------------------------
-    tablet
-----------------------------------------*/
-@media only screen
-and (min-width: 481px)
-and (max-width: 768px) {
-    .grid {
-        grid-template:
-            "header header" 3em
-            "nav    nav"    3em
-            "main   aside"  auto
-            "footer footer" 3em
-        /    7fr    5fr;
-    }
-}
-
-/*----------------------------------------
-    mobile
-----------------------------------------*/
-@media only screen
-and (max-width: 480px) {
-    .grid {
-        grid-template:
-            "header" 3em
-            "nav   " 3em
-            "main  " auto
-            "aside " auto
-            "footer" 3em
-        /    1fr;
-    }
 }
 
 /*.prmary-color{
@@ -184,6 +120,7 @@ header .site-title{
 /*Navigation Menu*/
 .navbar-light .navbar-nav .nav-link {
     color: rgba(0,0,0,.5);
+    
     font-weight: bold;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -255,7 +192,7 @@ header .site-title{
   
   .b{
     display: none;
-    width:50%;
+    width:100%;
     max-width: 350px;
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
     border: 1px solid rgba(0,0,0,.15);
@@ -268,8 +205,8 @@ header .site-title{
   }
   
   .btn-select{
-    margin-top: 10px;
-    width: 50%;
+    margin-top:-200px;
+    width:80%;
     max-width: 350px;
     height: 34px;
     border-radius: 5px;
@@ -279,7 +216,7 @@ header .site-title{
   }
   .btn-select li{
     list-style: none;
-    float: left;
+    float:right;
     padding-bottom: 0px;
   }
   
@@ -421,308 +358,14 @@ header .site-title{
     font-size: 13px;
 }
 .carousel-inner .carousel-caption{
-    float:right;
+    float:left;
 	width: 50%
 }
 
 /*End Silder*/ 
 /*card*/
-/* Category Ads */
-/*
-#ads {
-    margin: 30px 0 30px 0;
-   
-}
-
-#ads .card-notify-badge {
-        position: absolute;
-        left: -10px;
-        top: -20px;
-        background: #f2d900;
-        text-align: center;
-        border-radius: 30px 30px 30px 30px; 
-        color: #000;
-        padding: 5px 10px;
-        font-size: 14px;
-
-    }
-
-#ads .card-notify-year {
-        position: absolute;
-        right: -10px;
-        top: -20px;
-        background: #ff4444;
-        border-radius: 50%;
-        text-align: center;
-        color: #fff;      
-        font-size: 14px;      
-        width: 50px;
-        height: 50px;    
-        padding: 15px 0 0 0;
-}
 
 
-#ads .card-detail-badge {      
-        background: #f2d900;
-        text-align: center;
-        border-radius: 30px 30px 30px 30px;
-        color: #000;
-        padding: 5px 10px;
-        font-size: 14px;        
-    }
-
-   
-
-#ads .card:hover {
-            background: #fff;
-            box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-
-#ads .card-image-overlay {
-        font-size: 20px;
-        
-    }
-
-
-#ads .card-image-overlay span {
-            display: inline-block;              
-        }
-
-
-#ads .ad-btn {
-        text-transform: uppercase;
-        width: 150px;
-        height: 40px;
-        border-radius: 80px;
-        font-size: 16px;
-        line-height: 35px;
-        text-align: center;
-        border: 3px solid #e6de08;
-        display: block;
-        text-decoration: none;
-        margin: 20px auto 1px auto;
-        color: #000;
-        overflow: hidden;        
-        position: relative;
-        background-color: #e6de08;
-    }
-
-#ads .ad-btn:hover {
-            background-color: #e6de08;
-            color: #1e1717;
-            border: 2px solid #e6de08;
-            background: transparent;
-            transition: all 0.3s ease;
-            box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
-        }
-
-#ads .ad-title h5 {
-    text-transform: uppercase;
-    font-size: 18px;
-}
-*/
-/*card images*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-*
-{
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-a
-{
-    text-decoration: none;
-}
-.product-card {
-    width: 300px;
-    position: relative;
-    box-shadow: 0 2px 7px #dfdfdf;
-    margin: 50px auto;
-   /* background: ;*/
-    
-}
-
-.badge {
-     position: absolute;
-    left: -10px;
-    top: -18px;
-    background: #ff4444;
-    border-radius: 50%;
-    text-align: center;
-    color: #fff;      
-    font-size: 14px;      
-    width: 50px;
-    height: 50px;    
-    padding: 15px 0 0 0;
-   /* position: absolute;
-    left: 0;
-    top: 20px;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-    background: red;
-    color: #fff;
-    padding: 3px 10px;*/
-}
-
-.product-tumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-   
-    padding: 30px;
-    
-    /*background: #f0f0f0;*/
-}
-
-.product-tumb img {
-    max-width: 100%;
-    max-height: 100%;
-    display:inline-block ;
-}
-
-.product-details {
-    padding: 20px;
-}
-
-.product-catagory {
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ccc;
-    margin-bottom: 18px;
-}
-
-.product-details h4 a {
-    font-weight: 500;
-    text-align: center;
-    display: block;
-    margin-bottom: 18px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    color: #363636;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 18px;
-}
-
-/*.product-details h4 a:hover {
-    color: #fbb72c;
-}*/
-.product-details h4.ad-btn {
-    text-transform: uppercase;
-    width: 150px;
-    height: 40px;
-    border-radius: 80px;
-    font-size: 16px;
-    line-height: 35px;
-    text-align: center;
-    border: 3px solid #e6de08;
-    display: block;
-    text-decoration: none;
-    margin: 20px auto 1px auto;
-    color: #000;
-    overflow: hidden;        
-    position: relative;
-    background-color: #e6de08;
-}
-
- .ad-btn:hover {
-        background-color: #e6de08;
-        color: #1e1717;
-        border: 2px solid #e6de08;
-        background: transparent;
-        transition: all 0.3s ease;
-        box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
-    }
-
- .ad-btn  {
-   
-        text-transform: uppercase;
-        width: 150px;
-        height: 40px;
-        border-radius: 80px;
-        font-size: 16px;
-        line-height: 35px;
-        text-align: center;
-        border: 3px solid #e6de08;
-        display: block;
-        text-decoration: none;
-        margin: 20px auto 1px auto;
-        color: #000;
-        overflow: hidden;        
-        position: relative;
-        background-color: #e6de08;
-    }
-
-    .ad-btn:hover {
-        background-color: #e6de08;
-        color: #1e1717;
-        border: 2px solid #e6de08;
-        background: transparent;
-        transition: all 0.3s ease;
-        box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
-    }
-
-
-
-.product-bottom-details {
-    overflow: hidden;
-    border-top: 1px solid #eee;
-    padding-top: 20px;
-}
-
-/*.product-bottom-details div {
-    float: left;
-    width: 50%;
-}*/
-
-.product-price {
-    width: 120px;
-    font-size: 18px;
-    color: #fbb72c;
-    font-weight: 600;
-    background: #f2d900;
-    text-align: center;
-    border-radius: 30px 30px 30px 30px;
-    color: #000;
-    padding: 5px 10px;
-    font-size: 14px;   
-}
-
-.product-price small {
-    font-size: 80%;
-    font-weight: 400;
-    text-decoration: line-through;
-    display: inline-block;
-    margin-right: 5px;
-}
-
-.product-links {
-    text-align: right;
-}
-
-.product-links a {
-    display: inline-block;
-    margin-left: 5px;
-    color: #e1e1e1;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-.product-links a:hover {
-    color: #fbb72c;
-}
-/*/card*/
 
 /*model card*/
 
@@ -751,10 +394,13 @@ a
  .footer .footer-content h1,
  .footer .footer-content h2{
     color:white;
+    font-size:1.1em;
+
+    
  }
 
- .footer .footer-content .about .site-title h2  {
-    font-family: var( --gugi);
+ .footer .footer-content .about h1 span {
+     color:#05f7ff;
  }
 
  .footer .footer-content .about .contact span {
@@ -763,7 +409,7 @@ a
     margin-bottom: 8px;
 }
 
-.footer .footer-content .about .socials a {
+.footer .footer-content .contact-form .socials a {
     border:1px solid gray;
     width: 45px;
     height: 41px;
@@ -771,35 +417,22 @@ a
     margin-right:5px;
     text-align: center;
     display:inline-block;
+    
     font-size:1.3em;
     border-radius: 5px;
     transition: all .3s;
 }
 
-.footer .footer-content .links ul a{
+.footer .footer-content  .links ul li a{
     display: block;
     margin-bottom:10px;
     font-size: 1.2em;
-    list-style-type: none;
-
-    color:white;
-}
-.footer .footer-content .socials a li{
-    display: block;
-    margin-bottom:10px;
-    font-size: 1.2em;
-    list-style-type: none;
-    color:white;
-}
-.footer .footer-content .socials a li:hover{
-    
-    transition: all .3s;
-    color:var(--primary-color);
+    color: #727272;
+   
 }
 
-
-.footer .footer-content .links ul a:hover{
-  
+.footer .footer-content .links ul li a:hover{
+   color:white;
    margin-left:15px ;
    transition: all .3s;
 }
@@ -817,11 +450,11 @@ a
 }
 
 .footer .footer-content .contact-form .contact-btn{
-   float: right;
+   float: left;
    font-size:1.1rem;
-   font-family:var( --roboto) ;
+   font-family:'Lora',serif;
 }
-.footer .footer-content .about .socials a:hover{
+.footer .footer-content .footer-section .socials a:hover{
     border:1px solid white;
     color:white;
     transition: all .3s;
@@ -840,6 +473,7 @@ a
      
  }
 /*End Footer*/
+
 
 
  /* MEDIA QUERIES*/
@@ -949,7 +583,7 @@ a
 	display:block;
 	color:#303030;
 	text-align:center;
-	background:var(--primary-color);
+	background:#ff686b;
 	border-radius:50%;
 	-webkit-border-radius:50%;
 	-o-border-radius:50%;
@@ -1041,7 +675,7 @@ a
 .ads{
     margin-top: 20px ;
     margin-bottom: 20px;
-    margin-left: 150px;
+    margin-right: 150px;
     width:109%;
     height: 50px;
     background-color: #980110;
@@ -1050,14 +684,14 @@ a
     color: white;
     font-size: 20px;
     padding-top:14px;
-    text-align: right;
+    text-align: left;
     margin-right: 10px;
 }
 
 .ads img {
     width:40px;
     margin-top: -100px;
-    margin-left: -110px;
+    margin-right: -110px;
     position: relative;
 }
 /*banner*/

@@ -25,222 +25,208 @@
 </head>
 <body>
   
-
-
-      <header>
-        <div class="container">
-          <div class="row">
-            <div class="col-4">
-              <div class="header_right">
-                  <div class="logo">
-                      
-                          <img src="images/jamalon_logo_arabic.svg" alt="">
-                      
-                  </div>
+   <!--heade-->
+    
+   <header>
+     
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="header_right">
+              <div class="logo">
+                  
+                      <img src="images/jamalon_logo_arabic.svg" alt="">
+                  
               </div>
           </div>
-            <div class="col-md-8 col-sm-12">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-4 col-sm-12 col-12">
-                    <div class="btn-group" style="width:60px;margin-left:101px;">
-                      <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">اللغة</button>
-                       
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a href="#" class="dropdown-item" onClick="styler('a')">اللغة العربية</a>
-                          <a href="#" class="dropdown-item" onClick="styler('e')">اللغة الإنجليزية</a>
-                      </div>
-                        </div>
-                      </div>
-                        <div class="col-md-4 col-sm-12 col-12">
-                        <div class="btn-group">
-                    <div class="text-center">
-                      <a href="" class="btn btn-danger mb-4 px-2 fa fa-user" data-toggle="modal" data-target="#modalLoginForm" style="margin-top: 25px;
-                      width: 183%;height: 35px;">
-                          تسجيل الدخول</a>
+      </div>
+        <div class="col-md-8 col-sm-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-12 col-12">
+                <div class="btn-group">
+                  <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:150px;
+                  margin-right:120px;"> اللغة </button>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a href="#" class="dropdown-item" onClick="styler('a')">اللغة العربية</a>
+                      <a href="#" class="dropdown-item" onClick="styler('e')">اللغة الإنجليزية</a>
+                  </div>
                     </div>
                   </div>
-                </div>
-                  <div class="col-md-4 col-sm-12 col-12 left">
-                  <div class="btn-group">
-                  
-                  <div class="text-center ">
-                    <a href="" class="btn btn-danger mb-4 px-1 create-account fa fa-plus " data-toggle="modal" data-target="#modalRegisterForm"
-                    style="margin-top: 25px; width:123%;margin-left:70px;height: 35px;">
-                        إنشاء حساب</a>
-                    </div>
+                    <div class="col-md-4 col-sm-12 col-12">
+                    <div class="btn-group">
+                <div class="text-center">
+                  <a href="" class="btn btn-danger mb-4 px-2 fa fa-user" data-toggle="modal" data-target="#modalLoginForm" style="margin-top: 25px;
+                  width: 183%;height: 35px;">
+                      تسجيل الدخول</a>
                 </div>
               </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-sm-12 col-12">
-                  <select class="vodiapicker btn border dropdown-toggle my-md-4 my-2 text-white" id="slct1" name="slct1" onchange="populate(this.id,'slct2') ">
-
-                    <option value="Yemen " class="test" data-thumbnail="https://www.sciencekids.co.nz/images/pictures/flags96/Yemen.jpg">اليمن</option>
-                    <option value=" Egypt"  data-thumbnail="https://www.sciencekids.co.nz/images/pictures/flags96/Egypt.jpg">مصر</option>
-                    <option value=" Saudi_Arabia"  data-thumbnail="https://www.sciencekids.co.nz/images/pictures/flags96/Saudi_Arabia.jpg">السعودية</option>
-                    <option value=" Sudan"  data-thumbnail="https://www.sciencekids.co.nz/images/pictures/flags120/Sudan.jpg">السودان</option>
-                    <option value=" Syria "  data-thumbnail="https://www.sciencekids.co.nz/images/pictures/flags96/Syria.jpg">سوريا</option>
-    
-                  </select>
-                  
-                    <div class="lang-select">
-                      <button class="btn-select dropdown" value=""> الدول</button>
-                      <div class="b">
-                      <ul id="a"></ul>
-                      </div>
-                      </div-->
-                <select class="btn border dropdown-toggle  my-md-4 my-2 text-white" id="slct2" name="slct2">
+            </div>
+              <div class="col-md-4 col-sm-12 col-12 left">
+              <div class="btn-group">
+              
+              <div class="text-center ">
+                <a href="" class="btn btn-danger mb-4 px-1 create-account fa fa-plus " data-toggle="modal" data-target="#modalRegisterForm"
+                style="margin-top: 25px; width:123%;margin-left:70px;height: 35px;">
+                    إنشاء حساب</a>
                 </div>
+            </div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="dropdown">
+                <select  class="btn border dropdown-toggle my-md-4 my-2 text-white" id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+                  <option value="" class="dropdown-item">choose countery</option>
+                  <option value="Yemen" class="dropdown-item">Yemen</option>
+                  <option value=" Egypt" class="dropdown-item"> Egypt</option>
+                 
                 </select>
-                <div class="col-md-6 col-sm-12 col-12">
-                  <button class="btn btn-danger"> بـحـث</button>
-                 <input type="text" placeholder="بـحـث" class="fas fa-search p-2" style="border: none;
-                 height: 36px;
-                 width: 81%;
-                 margin-right: -5px;" />
-         </div>
+              
+                <select class="btn border dropdown-toggle  my-md-4 my-2 text-white"  id="slct2" name="slct2" onchange="swapImage()">
+                </select>
 
-         </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-12">
+                   <button class="btn btn-danger"> بـحـث</button>
+                  <input type="text" placeholder="بـحـث" class="fas fa-search p-2" style="border: none;
+                  height: 36px;
+                  width: 81%;
+                  margin-right: -5px;" />
+          </div>
+
+          </div>
+            
            
-          
-                 
+                  
 
-                 
-                   </div>
-    
-             
+                  
+                    </div>
+                          
                 
-               
-                      
-    
-                      
+            
+
+
+            <div class="col-md-4 col-12 text-right">
+                <p class="col-md-4 header-linkes">
+
+                    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header text-center">
+                          <h4 class="modal-title w-100 font-weight-bold ">Sign in</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
                         </div>
-                              
-                    
-                
-    
-    
-                <div class="col-md-4 col-12 text-right">
-                    <p class="col-md-4 header-linkes">
-    
-                        <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header text-center">
-                              <h4 class="modal-title w-100 font-weight-bold ">Sign in</h4>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body mx-3">
-                              <div class="md-form mb-5">
-                                <i class="fas fa-envelope prefix grey-text"></i>
-                                <input type="email" id="defaultForm-email" class="form-control validate">
-                                <label data-error="wrong" data-success="left" for="defaultForm-email">الإيميل</label>
-                              </div>
-                      
-                              <div class="md-form mb-4">
-                                <i class="fas fa-lock prefix grey-text"></i>
-                                <input type="password" id="defaultForm-pass" class="form-control validate">
-                                <label data-error="wrong" data-success="left" for="defaultForm-pass">الباسورد</label>
-                              </div>
-                      
-                            </div>
-                            <div class="modal-footer d-flex justify-content-center">
-                              <button class="btn btn-info btn-rounded ">Login</button>
-                            </div>
+                        <div class="modal-body mx-3">
+                          <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="email" id="defaultForm-email" class="form-control validate">
+                            <label data-error="wrong" data-success="left" for="defaultForm-email">الإيميل</label>
                           </div>
+                  
+                          <div class="md-form mb-4">
+                            <i class="fas fa-lock prefix grey-text"></i>
+                            <input type="password" id="defaultForm-pass" class="form-control validate">
+                            <label data-error="wrong" data-success="left" for="defaultForm-pass">الباسورد</label>
+                          </div>
+                  
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                          <button class="btn btn-info btn-rounded ">Login</button>
                         </div>
                       </div>
-                        <!--a href="#" class="px-2">Sigin In</a-->
-                        <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                            <div class="modal-header text-center">
-                                <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body mx-3">
-                                <div class="md-form mb-5">
-                                <i class="fas fa-user prefix grey-text"></i>
-                                <input type="text" id="orangeForm-name" class="form-control validate">
-                                <label data-error="wrong" data-success="right" for="orangeForm-name">الاسم </label>
-                                </div>
-                                <div class="md-form mb-5">
-                                <i class="fas fa-envelope prefix grey-text"></i>
-                                <input type="email" id="orangeForm-email" class="form-control validate">
-                                <label data-error="wrong" data-success="right" for="orangeForm-email">الإيميل</label>
-                                </div>
-    
-                                <div class="md-form mb-4">
-                                <i class="fas fa-lock prefix grey-text"></i>
-                                <input type="password" id="orangeForm-pass" class="form-control validate">
-                                <label data-error="wrong" data-success="right" for="orangeForm-pass">الباسورد</label>
-                                </div>
-    
-                            </div>
-                            <div class="modal-footer d-flex justify-content-center">
-                                <button class="btn btn-info btn-rounded">Sign up</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-    
-                       
-                        <!--a href="#" class="px-1">Create an Acount</a-->
-                        
-                    </p>
-    
-                </div>
-              </div>
-            </div>
-            </div>
-        
-        
-            <!--div class="header fixed-top"></div-->
-            <div class="container-fluid p-0">
-              <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav" style="margin-right:300px">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="#"><i class="fa fa-home">الرئيسية</i> <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-columns">الأقسام</i></a>
-                          
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"><i class='fas fa-store'>المتاجر</i></a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#"><i class="fa fa-gift">عروض مميزة</i></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#"><i class="fa fa-address-book">من نحن</i></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#"><i class="fa fa-address-card"> اتصل بنا</i> </a>
-                           
-                        </li>
-                    </ul>
+                    </div>
                   </div>
-      
-                </nav>
-      
-         </div>
-      
-        
-      
-    </header>
-   <!--/heade-->
+                    <!--a href="#" class="px-2">Sigin In</a-->
+                    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="orangeForm-name" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-name">الاسم </label>
+                            </div>
+                            <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="email" id="orangeForm-email" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-email">الإيميل</label>
+                            </div>
+
+                            <div class="md-form mb-4">
+                            <i class="fas fa-lock prefix grey-text"></i>
+                            <input type="password" id="orangeForm-pass" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-pass">الباسورد</label>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-info btn-rounded">Sign up</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                   
+                    <!--a href="#" class="px-1">Create an Acount</a-->
+                    
+                </p>
+
+            </div>
+          </div>
+        </div>
+        </div>
+    
+    
+        <div class="fixed-header text-center">
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav" style="margin-right:450px">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">الرئيسة <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">الأقسام</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">المتاجر</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">عروض مميزة</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">من نحن</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">اتصل بنا </a>
+                  </li>
+              </ul>
+            </div>
+
+          </nav>
+
+    </div>
+  </div>
+
+  
+
+</header>
+<!--/header-->
    <!--/heade-->
    <!--Main section-->
     <main>
@@ -2550,90 +2536,70 @@
   
    
     <!--Start footer-->
-    <!--Start Footer -->
+      <!--Start footer-->
     <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="site-info">
-              <h2>دليل التخفيضات</h2>
-
-              <div class="col">
-                <ul class="list-unstyled">
+      <div class="footer-content">
+            <div class="footer-section links">
+              <h2>دليل التخفيضات</h2> 
+              <br>
+              <ul>
+                  <li><a href="#"> الرئيسية</a></li>
+                  <li><a href="#"> الأقسام</a></li>
+                  <li><a href="#"> المتاجر</a></li>
+                  <li><a href="#">  عروض حصرية</a></li>
+                 
                   
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">الأقسام</a></li>
-                <li><a href="#">المتاجر</a></li>
-                <li><a href="#">عروض حصرية</a></li>
-               </ul>
-               </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="helpful-links">
-            <h2>عن الدليل</h2>
-            <div class="row">
-              <div class="col">
-                <ul class="list-unstyled">
-                <li><a href="#">ماهو موقع دليل التخفيضات؟</a></li>
-                <li><a href="#">طرق الدفع الاوائح</a></li>
-                <li><a href="#">طرق الدفع التخفيضات الاعلانية</a></li>
-               
-               </ul>
-               </div>
-             <!--div class="col">
-               <ul class="list-unstyled ">
-                <h2>المساعدة</h2>
-                <li><a href="#">ماهو موقع دليل التخفيضات؟</a></li>
-               <li><a href="#">طرق الدفع الاوائح</a></li>
-               <li><a href="#">رق الدفع التخفيضات الاعلانية</a></li>
-             
               </ul>
-             </div-->
-            
-             </div>
+
+          </div>
+             
+             
+          
+          <div class="footer-section links">
+              <h2> عن الدليل</h2> 
+              <br>
+              <ul>
+                  <li><a href="#">عن الدليل </a></li>
+                  <li><a href="#">ماهو موقع دليل التخفيضات؟</a></li>
+                  <li><a href="#">  طرق الدفع الاوائح </a></li>
+                  <li><a href="#">طرق الدفع التخفيضات الاعلانية </a></li>
+                
+              </ul>
+
+          </div>
+          <div class="footer-section links">
+            <h2>المساعدة</h2> 
+            <br>
+            <ul>
+                <li><a href="#"> أتصل بنا </a></li>
+                <li><a href="#"> مساعدة المستخدم</a></li>
+                <li><a href="#"> صياغة المحتوى</a></li>
+                
+               
+                
+            </ul>
+
+        </div>
+          <div class="footer-section contact-form">
+              <h2>تابعنا على</h2>
+              <br>
+              <div class="socials">
+                <a href="#"><i class="fa  fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
             </div>
           </div>
-          
-         <div class="col-md-3">
-          
-          <div class="col text-left">
-              <h2>تواصل معانا</h2>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-youtube"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-              </li>
-            </ul>
-            
-          </div>
-         </div>
-        </div>
-      </div>
-    </div> 
-    <!-- End Footer -->
-     
-   <!--Start Copyright -->
-   <div class="copyright">
-     <div class="container">
-       <div class="row">
-         <div class="col texr-left text-uppercase ">
-          Copyright 2020 Wala Nabil &copy;All Right Reserved 
-         </div>
-       
-       </div>
-     </div>
-   </div>
-   <!--EndCopyright -->
 
+      </div>
+      <div class="footer-bottom">
+          &copy; Oline Store.com | Designed by Wala Nabil
+      </div>
+  </div>
+  <!--End footer-->
+ 
+        
+           
  
 <div id="back-top">
   <a  class="scroll-link" data-id="home" href="#">
